@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>二十余家跨领域公司分阶段筹建规划</title>
+<!-- SECTION: meta-desc -->
+<meta name="description" content="2至3年内分阶段筹建20余家跨领域公司的总体规划，覆盖四大业务类别与七个落点。">
+<style>
+/* SECTION: reset-base */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  background:#06090f;
+  color:#e6edf7;
+  line-height:1.7;
+  font-size:16px;
+  overflow-wrap:break-word;
+}
+img,svg,canvas{max-width:100%;height:auto;display:block}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:inherit}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+
+/* SECTION: layout-shell */
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 clamp(16px,4vw,32px)}
+.section{padding:clamp(48px,7vw,88px) 0}
+.section-head{margin-bottom:clamp(24px,4vw,40px)}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;letter-spacing:.18em;text-transform:uppercase;
+  color:#8ea3c4;margin-bottom:12px;font-weight:600;
+}
+.eyebrow::before{content:"";width:26px;height:2px;background:currentColor;border-radius:2px}
+.section-title{font-size:clamp(24px,4vw,36px);letter-spacing:-.01em}
+.section-sub{color:#93a5c2;margin-top:10px;max-width:760px;font-size:15px}
+
+/* SECTION: topnav */
+.topnav{
+  position:sticky;top:0;z-index:60;
+  background:rgba(6,9,15,.82);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(255,255,255,.07);
+}
+.topnav-in{display:flex;align-items:center;gap:16px;min-height:60px;flex-wrap:wrap;padding:8px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;letter-spacing:.02em;min-width:0}
+.brand-mark{
+  width:30px;height:30px;flex:0 0 30px;border-radius:9px;
+  background:linear-gradient(135deg,#38bdf8,#a78bfa 55%,#34d399);
+  display:grid;place-items:center;font-size:13px;color:#06090f;font-weight:800;
+}
+.brand-txt{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.navlinks{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.navlinks a{
+  padding:9px 13px;border-radius:9px;font-size:14px;color:#a8b8d2;
+  text-decoration:none;transition:background .18s,color .18s;white-space:nowrap;
+}
+.navlinks a:hover,.navlinks a:focus-visible{background:rgba(255,255,255,.07);color:#fff}
+.navlinks a.on{background:rgba(56,189,248,.14);color:#7dd3fc}
+
+/* SECTION: hero */
+.hero{position:relative;overflow:hidden;padding:clamp(56px,9vw,104px) 0 clamp(40px,6vw,72px)}
+.hero-bg{position:absolute;inset:0;pointer-events:none;z-index:0}
+.hero-bg::before,.hero-bg::after{
+  content:"";position:absolute;border-radius:50%;filter:blur(90px);opacity:.30;
+}
+.hero-bg::before{width:520px;height:520px;background:#2563eb;top:-180px;left:-120px}
+.hero-bg::after{width:460px;height:460px;background:#7c3aed;bottom:-200px;right:-100px}
+.hero-grid{
+  position:absolute;inset:0;z-index:0;opacity:.35;
+  background-image:linear-gradient(rgba(148,178,224,.07) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(148,178,224,.07) 1px,transparent 1px);
+  background-size:56px 56px;
+  mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000 40%,transparent 100%);
+  -webkit-mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000 40%,transparent 100%);
+}
+.hero-in{position:relative;z-index:1}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:9px;padding:7px 15px;border-radius:999px;
+  background:rgba(56,189,248,.10);border:1px solid rgba(56,189,248,.28);
+  color:#93c9f5;font-size:13px;font-weight:600;margin-bottom:22px;
+}
+.pulse{width:7px;height:7px;border-radius:50%;background:#38bdf8;flex:0 0 7px;box-shadow:0 0 0 0 rgba(56,189,248,.7);animation:pulse 2.4s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(56,189,248,0)}100%{box-shadow:0 0 0 0 rgba(56,189,248,0)}}
+.hero h1{
+  font-size:clamp(30px,6.4vw,60px);letter-spacing:-.02em;line-height:1.16;
+  background:linear-gradient(100deg,#fff 12%,#bcd6f5 48%,#8fb4e8 88%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero-lead{margin-top:20px;max-width:800px;color:#a9bad4;font-size:clamp(15px,2vw,18px)}
+.hero-stats{
+  display:grid;gap:14px;margin-top:clamp(32px,5vw,50px);
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+}
+.stat{
+  background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);
+  border-radius:16px;padding:20px 18px;min-width:0;
+  transition:border-color .2s,transform .2s,background .2s;
+}
+.stat:hover{border-color:rgba(56,189,248,.38);transform:translateY(-3px);background:rgba(56,189,248,.05)}
+.stat-num{font-size:clamp(28px,4.6vw,40px);font-weight:800;letter-spacing:-.02em;line-height:1.1;color:#fff;font-variant-numeric:tabular-nums}
+.stat-num small{font-size:.5em;font-weight:700;color:#8ea3c4;margin-left:3px}
+.stat-lab{color:#8ea3c4;font-size:13px;margin-top:7px;letter-spacing:.03em}
+
+/* SECTION: toolbar */
+.toolbar{
+  position:sticky;top:60px;z-index:50;
+  background:rgba(6,9,15,.90);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-block:1px solid rgba(255,255,255,.07);padding:13px 0;
+}
+.toolbar-in{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.chips{display:flex;gap:7px;flex-wrap:wrap;min-width:0}
+.chip{
+  padding:9px 15px;border-radius:999px;font-size:13.5px;font-weight:600;white-space:nowrap;
+  background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.10);color:#a8b8d2;
+  transition:all .18s;min-height:38px;
+}
+.chip:hover{border-color:rgba(255,255,255,.24);color:#fff}
+.chip.on{background:#fff;border-color:#fff;color:#06090f}
+.search{position:relative;margin-left:auto;min-width:0;flex:1 1 210px;max-width:300px}
+.search svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:#6f83a3;pointer-events:none}
+.search input{
+  width:100%;padding:10px 13px 10px 38px;border-radius:999px;font-size:16px;
+  background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.10);
+  color:#e6edf7;outline:none;transition:border-color .18s,background .18s;
+}
+.search input::placeholder{color:#6f83a3}
+.search input:focus{border-color:rgba(56,189,248,.55);background:rgba(56,189,248,.07)}
+.result-line{color:#8ea3c4;font-size:13.5px;padding:14px 0 0}
+.result-line b{color:#e6edf7;font-variant-numeric:tabular-nums}
+
+/* SECTION: category */
+.cat-sec{scroll-margin-top:126px}
+.cat-head{
+  display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap;
+  padding-bottom:18px;margin-bottom:26px;border-bottom:1px solid rgba(255,255,255,.09);
+}
+.cat-badge{
+  width:52px;height:52px;flex:0 0 52px;border-radius:15px;display:grid;place-items:center;
+  font-size:21px;font-weight:800;color:#06090f;
+}
+.cat-titles{min-width:0;flex:1 1 260px}
+.cat-kicker{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;margin-bottom:5px}
+.cat-name{font-size:clamp(20px,3.2vw,28px);letter-spacing:-.01em}
+.cat-count{
+  align-self:center;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:700;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10);
+  color:#a8b8d2;white-space:nowrap;font-variant-numeric:tabular-nums;
+}
+
+/* SECTION: cards */
+.cards{display:grid;gap:15px;grid-template-columns:repeat(auto-fill,minmax(268px,1fr))}
+.card{
+  position:relative;display:flex;flex-direction:column;gap:11px;min-width:0;
+  background:rgba(255,255,255,.033);border:1px solid rgba(255,255,255,.09);
+  border-radius:17px;padding:20px;overflow:hidden;
+  transition:transform .22s cubic-bezier(.2,.7,.3,1),border-color .22s,background .22s,box-shadow .22s;
+}
+.card::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:var(--ac);opacity:.75;transition:opacity .22s,width .22s;
+}
+.card:hover,.card:focus-within{
+  transform:translateY(-4px);border-color:color-mix(in srgb,var(--ac) 45%,transparent);
+  background:rgba(255,255,255,.055);box-shadow:0 14px 34px -14px rgba(0,0,0,.8);
+}
+.card:hover::before{opacity:1;width:4px}
+.card-top{display:flex;align-items:center;gap:8px;min-width:0}
+.card-idx{
+  font-size:11.5px;font-weight:800;letter-spacing:.06em;color:var(--ac);
+  background:color-mix(in srgb,var(--ac) 14%,transparent);
+  border:1px solid color-mix(in srgb,var(--ac) 30%,transparent);
+  padding:3px 9px;border-radius:7px;font-variant-numeric:tabular-nums;flex:0 0 auto;
+}
+.card-cat{font-size:12px;color:#8497b6;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.card-name{font-size:17.5px;letter-spacing:-.01em;color:#fff;line-height:1.4}
+.card-name .en{display:block;font-size:12.5px;font-weight:600;color:#7f92b2;margin-top:3px;letter-spacing:.02em}
+.card-loc{display:flex;align-items:center;gap:6px;font-size:13.5px;color:#9db0cd;flex-wrap:wrap}
+.card-loc svg{flex:0 0 14px;color:var(--ac)}
+.loc-flag{
+  font-size:11px;font-weight:700;padding:2px 7px;border-radius:6px;
+  background:rgba(251,191,36,.14);border:1px solid rgba(251,191,36,.32);color:#fcd34d;white-space:nowrap;
+}
+.card-desc{font-size:14px;color:#9db0cd;line-height:1.65;flex:1 1 auto}
+.card-tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{
+  font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:999px;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);color:#93a5c2;
+}
+.card-more{
+  align-self:flex-start;margin-top:2px;padding:8px 15px;border-radius:9px;
+  background:transparent;border:1px solid color-mix(in srgb,var(--ac) 38%,transparent);
+  color:var(--ac);font-size:13px;font-weight:700;transition:all .18s;min-height:38px;
+}
+.card-more:hover,.card-more:focus-visible{background:var(--ac);color:#06090f;border-color:var(--ac)}
+
+/* SECTION: empty-state */
+.empty{
+  display:none;text-align:center;padding:64px 20px;color:#8497b6;
+  border:1px dashed rgba(255,255,255,.14);border-radius:18px;
+}
+.empty.show{display:block}
+.empty svg{margin:0 auto 14px;color:#4d607d}
+.empty p{font-size:15px}
+
+/* SECTION: locations */
+.loc-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(288px,1fr))}
+.loc-card{
+  background:rgba(255,255,255,.033);border:1px solid rgba(255,255,255,.09);
+  border-radius:17px;padding:20px;min-width:0;transition:border-color .2s,transform .2s;
+}
+.loc-card:hover{border-color:rgba(167,139,250,.4);transform:translateY(-3px)}
+.loc-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+.loc-name{font-size:19px;font-weight:800;color:#fff;display:flex;align-items:center;gap:9px}
+.loc-name svg{color:#a78bfa;flex:0 0 17px}
+.loc-n{
+  font-size:12.5px;font-weight:800;padding:4px 11px;border-radius:999px;
+  background:rgba(167,139,250,.14);border:1px solid rgba(167,139,250,.3);color:#c4b5fd;
+  font-variant-numeric:tabular-nums;white-space:nowrap;
+}
+.loc-list{display:flex;flex-direction:column;gap:2px}
+.loc-item{
+  display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:9px;
+  font-size:14px;color:#b3c3db;transition:background .16s;cursor:pointer;min-width:0;
+  background:transparent;border:0;text-align:left;width:100%;
+}
+.loc-item:hover{background:rgba(255,255,255,.055);color:#fff}
+.loc-dot{width:6px;height:6px;border-radius:50%;flex:0 0 6px}
+.loc-item span.nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.loc-item .ct{margin-left:auto;font-size:11px;color:#6f83a3;flex:0 0 auto;padding-left:6px}
+
+/* SECTION: roadmap */
+.road{position:relative;padding-left:clamp(26px,4vw,40px)}
+.road::before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,#38bdf8,#a78bfa 40%,#fbbf24 72%,#34d399)}
+.road-item{position:relative;padding-bottom:clamp(24px,3.4vw,34px)}
+.road-item:last-child{padding-bottom:0}
+.road-item::before{
+  content:"";position:absolute;left:calc(-1 * clamp(26px,4vw,40px) + 4px);top:7px;
+  width:12px;height:12px;border-radius:50%;background:#06090f;border:2.5px solid var(--rc);
+}
+.road-t{font-size:clamp(17px,2.6vw,20px);font-weight:800;color:#fff;margin-bottom:7px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.road-t .ph{font-size:11.5px;font-weight:800;letter-spacing:.08em;padding:3px 10px;border-radius:999px;background:color-mix(in srgb,var(--rc) 16%,transparent);color:var(--rc);border:1px solid color-mix(in srgb,var(--rc) 32%,transparent)}
+.road-d{color:#9db0cd;font-size:14.5px;max-width:780px}
+
+/* SECTION: summary */
+.summary{
+  background:linear-gradient(135deg,rgba(56,189,248,.09),rgba(167,139,250,.09) 50%,rgba(52,211,153,.07));
+  border:1px solid rgba(255,255,255,.11);border-radius:22px;padding:clamp(26px,4.5vw,44px);
+}
+.summary h3{font-size:clamp(19px,3vw,25px);color:#fff;margin-bottom:16px}
+.summary p{color:#c3d2e8;font-size:clamp(14.5px,1.9vw,16.5px);max-width:900px}
+.summary p+p{margin-top:13px}
+.hl{color:#fff;font-weight:700}
+
+/* SECTION: modal */
+.modal{
+  position:fixed;inset:0;z-index:100;display:none;
+  align-items:flex-end;justify-content:center;padding:0;
+}
+.modal.open{display:flex}
+.modal-bg{position:absolute;inset:0;background:rgba(3,5,10,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.modal-box{
+  position:relative;width:100%;max-width:620px;max-height:88vh;overflow-y:auto;
+  background:#0c1220;border:1px solid rgba(255,255,255,.13);
+  border-radius:22px 22px 0 0;padding:clamp(22px,4vw,32px);
+  animation:up .28s cubic-bezier(.2,.8,.3,1);overscroll-behavior:contain;
+}
+@keyframes up{from{transform:translateY(28px);opacity:0}to{transform:translateY(0);opacity:1}}
+@media(min-width:680px){
+  .modal{align-items:center;padding:24px}
+  .modal-box{border-radius:22px;animation:pop .26s cubic-bezier(.2,.8,.3,1)}
+  @keyframes pop{from{transform:scale(.96);opacity:0}to{transform:scale(1);opacity:1}}
+}
+.modal-close{
+  position:absolute;top:14px;right:14px;width:40px;height:40px;border-radius:11px;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.11);
+  display:grid;place-items:center;color:#a8b8d2;transition:all .18s;
+}
+.modal-close:hover{background:rgba(255,255,255,.14);color:#fff}
+.m-cat{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.04em;margin-bottom:12px}
+.m-cat i{width:8px;height:8px;border-radius:50%;background:var(--ac);display:block}
+.m-name{font-size:clamp(21px,3.6vw,27px);color:#fff;letter-spacing:-.01em;padding-right:44px}
+.m-en{font-size:13.5px;color:#7f92b2;font-weight:600;margin-top:5px;letter-spacing:.02em}
+.m-meta{display:flex;gap:9px;flex-wrap:wrap;margin:18px 0}
+.m-pill{
+  display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:10px;font-size:13px;font-weight:600;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:#b3c3db;
+}
+.m-pill svg{flex:0 0 14px;color:var(--ac)}
+.m-block{margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,.09)}
+.m-block:first-of-type{margin-top:0;padding-top:0;border-top:0}
+.m-lab{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#7f92b2;margin-bottom:9px}
+.m-txt{font-size:15px;color:#c3d2e8;line-height:1.75}
+.m-list{display:flex;flex-direction:column;gap:8px}
+.m-list li{display:flex;gap:10px;font-size:14.5px;color:#b3c3db;line-height:1.6}
+.m-list li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--ac);flex:0 0 5px;margin-top:9px}
+.m-note{
+  display:flex;gap:10px;padding:13px 15px;border-radius:12px;font-size:13.5px;line-height:1.6;
+  background:rgba(251,191,36,.09);border:1px solid rgba(251,191,36,.24);color:#fde68a;
+}
+.m-note svg{flex:0 0 17px;margin-top:2px}
+
+/* SECTION: footer */
+.foot{border-top:1px solid rgba(255,255,255,.08);padding:34px 0;color:#6f83a3;font-size:13.5px}
+.foot-in{display:flex;gap:14px;justify-content:space-between;flex-wrap:wrap;align-items:center}
+
+/* SECTION: reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+  .card,.stat,.loc-card{transition:none}
+  .pulse{animation:none}
+}
+
+/* SECTION: responsive */
+@media(max-width:760px){
+  .navlinks{width:100%;margin-left:0;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+  .navlinks::-webkit-scrollbar{display:none}
+  .toolbar{top:0;position:relative}
+  .search{max-width:none;flex:1 1 100%}
+  .cat-sec{scroll-margin-top:20px}
+  .cards{grid-template-columns:1fr}
+  .stat{padding:16px 15px}
+}
+@media(max-width:400px){
+  .cards{grid-template-columns:1fr}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<!-- SECTION: topnav -->
+<nav class="topnav">
+  <div class="wrap topnav-in">
+    <div class="brand">
+      <span class="brand-mark">筹</span>
+      <span class="brand-txt">跨领域公司分阶段筹建规划</span>
+    </div>
+    <div class="navlinks" id="navlinks">
+      <a href="#cat1" data-nav="cat1">第一类</a>
+      <a href="#cat2" data-nav="cat2">第二类</a>
+      <a href="#cat3" data-nav="cat3">第三类</a>
+      <a href="#cat4" data-nav="cat4">第四类</a>
+      <a href="#locs" data-nav="locs">落点汇总</a>
+      <a href="#plan" data-nav="plan">筹建路线</a>
+    </div>
+  </div>
+</nav>
+
+<!-- SECTION: hero -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="wrap hero-in">
+    <div class="hero-badge"><span class="pulse"></span>2 至 3 年内分阶段筹建</div>
+    <h1>二十余家跨领域公司<br>分阶段筹建规划</h1>
+    <p class="hero-lead">
+      覆盖长沙、成都、松阅、郑州、红钢城、青教花园、阳光花园七地，按业务划分为四大类别。
+      整体从操作系统与大模型起步，延伸到钢铁自动化与星链通信，再到机器人、太空能源、脑机接口、生命科学、
+      地外生产线、星际手机、真空高铁、太空芯片与量子通信，最后以 IP、内容、AI 应用、广告、大健康、培训与写作平台形成商业化支撑。
+    </p>
+    <div class="hero-stats" id="stats">
+      <div class="stat"><div class="stat-num" data-count="4">0</div><div class="stat-lab">业务类别</div></div>
+      <div class="stat"><div class="stat-num" data-count="31">0</div><div class="stat-lab">规划公司主体</div></div>
+      <div class="stat"><div class="stat-num" data-count="7">0</div><div class="stat-lab">筹建落点</div></div>
+      <div class="stat"><div class="stat-num" data-count="3">0</div><div class="stat-lab">筹建周期（年）</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- SECTION: toolbar -->
+<div class="toolbar">
+  <div class="wrap toolbar-in">
+    <div class="chips" id="chips"></div>
+    <div class="search">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+      <input id="q" type="search" placeholder="搜索公司名或落点" autocomplete="off" aria-label="搜索公司名或落点">
+    </div>
+  </div>
+</div>
+
+<main>
+<!-- SECTION: categories -->
+<div class="wrap">
+  <p class="result-line" id="resultLine"></p>
+</div>
+
+<section class="section cat-sec" id="cat1" style="padding-top:34px">
+  <div class="wrap">
+    <div class="cat-head rv">
+      <div class="cat-badge" style="background:linear-gradient(135deg,#38bdf8,#0ea5e9)">Ⅰ</div>
+      <div class="cat-titles">
+        <div class="cat-kicker" style="color:#38bdf8">Category 01</div>
+        <h2 class="cat-name">底层技术与平台型</h2>
+      </div>
+      <div class="cat-count" data-countfor="1">—</div>
+    </div>
+    <p class="section-sub rv" style="margin:-12px 0 26px">整体规划的技术底座：从开源体系、分布式操作系统、代码工具链到大模型能力，为上层各类产业与前沿业务提供支撑。</p>
+    <div class="cards" data-cards="1"></div>
+  </div>
+</section>
+
+<section class="section cat-sec" id="cat2">
+  <div class="wrap">
+    <div class="cat-head rv">
+      <div class="cat-badge" style="background:linear-gradient(135deg,#fbbf24,#f59e0b)">Ⅱ</div>
+      <div class="cat-titles">
+        <div class="cat-kicker" style="color:#fbbf24">Category 02</div>
+        <h2 class="cat-name">产业自动化与基础设施型</h2>
+      </div>
+      <div class="cat-count" data-countfor="2">—</div>
+    </div>
+    <p class="section-sub rv" style="margin:-12px 0 26px">面向实体产业的自动化改造与基础设施供给：钢铁自动化工程、星地通信、垂类控制模型、光纤宽带、安防与消防工程、智能家居物联网。</p>
+    <div class="cards" data-cards="2"></div>
+  </div>
+</section>
+
+<section class="section cat-sec" id="cat3">
+  <div class="wrap">
+    <div class="cat-head rv">
+      <div class="cat-badge" style="background:linear-gradient(135deg,#a78bfa,#8b5cf6)">Ⅲ</div>
+      <div class="cat-titles">
+        <div class="cat-kicker" style="color:#a78bfa">Category 03</div>
+        <h2 class="cat-name">多行星生存与前沿科技型</h2>
+      </div>
+      <div class="cat-count" data-countfor="3">—</div>
+    </div>
+    <p class="section-sub rv" style="margin:-12px 0 26px">指向多行星生存方向的长线布局：机器人、太空能源、电动汽车、脑机接口、生命科学、星链、火箭卫星、地外生产线、星际手机，以及真空高铁、太空芯片与量子通信。</p>
+    <div class="cards" data-cards="3"></div>
+  </div>
+</section>
+
+<section class="section cat-sec" id="cat4">
+  <div class="wrap">
+    <div class="cat-head rv">
+      <div class="cat-badge" style="background:linear-gradient(135deg,#34d399,#10b981)">Ⅳ</div>
+      <div class="cat-titles">
+        <div class="cat-kicker" style="color:#34d399">Category 04</div>
+        <h2 class="cat-name">综合实用型</h2>
+      </div>
+      <div class="cat-count" data-countfor="4">—</div>
+    </div>
+    <p class="section-sub rv" style="margin:-12px 0 26px">形成商业化支撑的现金流业务：IP 与投流、数字内容、AI 业务应用、广告设计、算力租用、大健康、培训与写作平台。</p>
+    <div class="cards" data-cards="4"></div>
+  </div>
+</section>
+
+<!-- SECTION: empty -->
+<div class="wrap">
+  <div class="empty" id="empty">
+    <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/><path d="M8.5 11h5"/></svg>
+    <p>没有匹配的公司主体，试试其他关键词或切换类别。</p>
+  </div>
+</div>
+
+<!-- SECTION: locations -->
+<section class="section" id="locs">
+  <div class="wrap">
+    <div class="section-head rv">
+      <div class="eyebrow">Location Map</div>
+      <h2 class="section-title">落点汇总</h2>
+      <p class="section-sub">七个筹建落点及其承载的公司主体。点击任意公司可查看详情。</p>
+    </div>
+    <div class="loc-grid" id="locGrid"></div>
+  </div>
+</section>
+
+<!-- SECTION: roadmap -->
+<section class="section" id="plan">
+  <div class="wrap">
+    <div class="section-head rv">
+      <div class="eyebrow">Phased Roadmap</div>
+      <h2 class="section-title">分阶段筹建路线</h2>
+      <p class="section-sub">按四类业务的依存关系分阶段推进，从技术底座到商业化支撑。</p>
+    </div>
+    <div class="road" id="road"></div>
+  </div>
+</section>
+
+<!-- SECTION: summary -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="summary rv">
+      <h3>一句话总结</h3>
+      <p>
+        整体规划以<span class="hl">长沙、成都、松阅、郑州、红钢城、青教花园、阳光花园</span>为主要落点，
+        在 <span class="hl">2 至 3 年内</span>分阶段筹建 <span class="hl">20 余家公司</span>。
+      </p>
+      <p>
+        第一类做<span class="hl">底层平台与大模型</span>，第二类做<span class="hl">产业自动化与通信基础设施</span>，
+        第三类做<span class="hl">多行星生存与前沿科技</span>，第四类做<span class="hl">综合实用型业务</span>。
+      </p>
+      <p>
+        整体从操作系统和大模型起步，延伸到钢铁自动化、星链通信，再到机器人、太空能源、脑机接口、生命科学、
+        地外生产线、星际手机、真空高铁、太空芯片和量子通信，最后用 IP、内容、AI 应用、广告、大健康、培训和写作平台形成商业化支撑。
+      </p>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- SECTION: footer -->
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span>二十余家跨领域公司分阶段筹建规划</span>
+    <span id="footCount">4 类 · 28 家 · 7 地</span>
+  </div>
+</footer>
+
+<!-- SECTION: modal -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mName">
+  <div class="modal-bg" data-close></div>
+  <div class="modal-box" id="mBox">
+    <button class="modal-close" type="button" data-close aria-label="关闭">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div id="mBody"></div>
+  </div>
+</div>
+
+<!-- SECTION: templates -->
+<template id="tplCard">
+  <article class="card">
+    <div class="card-top">
+      <span class="card-idx"></span>
+      <span class="card-cat"></span>
+    </div>
+    <h3 class="card-name"><span class="nm"></span><span class="en"></span></h3>
+    <p class="card-loc">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.8"/></svg>
+      <span class="loc-txt"></span>
+    </p>
+    <p class="card-desc"></p>
+    <div class="card-tags"></div>
+    <button class="card-more" type="button">查看详情</button>
+  </article>
+</template>
+
+<template id="tplLoc">
+  <div class="loc-card">
+    <div class="loc-head">
+      <div class="loc-name">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.8"/></svg>
+        <span class="ln"></span>
+      </div>
+      <span class="loc-n"></span>
+    </div>
+    <div class="loc-list"></div>
+  </div>
+</template>
+
+<template id="tplRoad">
+  <div class="road-item">
+    <div class="road-t"><span class="ph"></span><span class="rt"></span></div>
+    <p class="road-d"></p>
+  </div>
+</template>
+
+<template id="tplTag"><span class="tag"></span></template>
+<template id="tplLocItem">
+  <button class="loc-item" type="button"><span class="loc-dot"></span><span class="nm"></span><span class="ct"></span></button>
+</template>
+
+<script>
+/* SECTION: data */
+var CATS = [
+  {n:1, name:"底层技术与平台型",       short:"底层技术", ac:"#38bdf8"},
+  {n:2, name:"产业自动化与基础设施型", short:"产业自动化", ac:"#fbbf24"},
+  {n:3, name:"多行星生存与前沿科技型", short:"前沿科技", ac:"#a78bfa"},
+  {n:4, name:"综合实用型",             short:"综合实用", ac:"#34d399"}
+];
+
+var COMPANIES = [
+  /* —— 第一类 底层技术与平台型 —— */
+  {id:1,  cat:1, name:"Steel Claw", en:"", loc:"长沙",
+   desc:"属于类似 OpenClaw 体系下的下属公司。",
+   tags:["OpenClaw 体系"], lines:[]},
+  {id:2,  cat:1, name:"Genesis OS", en:"", loc:"成都",
+   desc:"专门开发新型的分布式系统操作系统。",
+   tags:["分布式系统","操作系统"], lines:[]},
+  {id:3,  cat:1, name:"engine Code", en:"", loc:"松阅",
+   desc:"从事代码与工具链相关业务。",
+   tags:["代码工具链"], lines:[]},
+  {id:4,  cat:1, name:"cosmos 大模型公司", en:"", loc:"松阅",
+   desc:"大模型方向业务主体。",
+   tags:["大模型"], lines:[]},
+
+  /* —— 第二类 产业自动化与基础设施型 —— */
+  {id:5,  cat:2, name:"深工智能", en:"", loc:"郑州",
+   desc:"主要做类似武钢的自动化各类工程，并加入人工智能。",
+   tags:["工业自动化","武钢类工程","AI 融合"], lines:[]},
+  {id:6,  cat:2, name:"深空通信", en:"", loc:"长沙",
+   desc:"主要做今后星链和地面基站的通讯转换和管理。",
+   tags:["星地通信","基站转换与管理"], lines:[]},
+  {id:7,  cat:2, name:"智冶纪元", en:"", loc:"青教花园",
+   desc:"专门做各个厂的垂类钢铁自动控制模型。",
+   tags:["垂类模型","钢铁自动控制"], lines:[]},
+  {id:8,  cat:2, name:"光纤一体化", en:"", loc:"成都",
+   desc:"主要做以光纤为主的宽带，包括电话、网络电视。",
+   tags:["光纤宽带","电话","网络电视"], lines:["光纤宽带","电话","网络电视"]},
+  {id:9,  cat:2, name:"安防工程", en:"", loc:"成都",
+   desc:"安防工程业务主体。",
+   tags:["安防工程"], lines:[]},
+  {id:10, cat:2, name:"消防工程", en:"", loc:"红钢城",
+   desc:"消防工程业务主体。地址需确认。",
+   tags:["消防工程"], lines:[], flag:"地址需确认"},
+  {id:11, cat:2, name:"智能家居与物联网", en:"", loc:"青教花园",
+   desc:"智能家居与物联网业务主体。地址需确认。",
+   tags:["智能家居","物联网"], lines:[], flag:"地址需确认"},
+
+  /* —— 第三类 多行星生存与前沿科技型 —— */
+  {id:12, cat:3, name:"机器人公司", en:"", loc:"松阅",
+   desc:"机器人方向业务主体。",
+   tags:["机器人"], lines:[]},
+  {id:13, cat:3, name:"太空能源", en:"", loc:"青教花园",
+   desc:"太空能源方向业务主体。",
+   tags:["太空能源"], lines:[]},
+  {id:14, cat:3, name:"电动汽车", en:"", loc:"长沙",
+   desc:"电动汽车方向业务主体。",
+   tags:["电动汽车"], lines:[]},
+  {id:15, cat:3, name:"脑机接口", en:"", loc:"郑州",
+   desc:"脑机接口方向业务主体。",
+   tags:["脑机接口"], lines:[]},
+  {id:16, cat:3, name:"生命科学公司", en:"", loc:"阳光花园",
+   desc:"主要业务包括人工智能配药，以及非人工智能方向的研究，如人体器官重组、生命延长与延寿等方面的研究。",
+   tags:["AI 配药","器官重组","生命延长"],
+   lines:["人工智能配药","非 AI 方向研究：人体器官重组","生命延长与延寿研究"]},
+  {id:17, cat:3, name:"星链公司", en:"", loc:"郑州",
+   desc:"星链方向业务主体。",
+   tags:["星链"], lines:[]},
+  {id:18, cat:3, name:"火箭与卫星公司", en:"", loc:"红钢城",
+   desc:"主要做卫星发射。",
+   tags:["卫星发射","火箭"], lines:[]},
+  {id:19, cat:3, name:"地外生产线", en:"第一块生产线的研究和建设", loc:"青教花园",
+   desc:"即第一块生产线的研究和建设，主要在其他星球如火星和月亮建设生产基地，重点建设地外建筑或人类所需的环境。",
+   tags:["火星基地","月球基地","地外建筑"],
+   lines:["火星与月球生产基地建设","地外建筑建设","人类所需环境建设"]},
+  {id:20, cat:3, name:"星际手机", en:"新型手机公司", loc:"青教花园",
+   desc:"即新型手机公司，主要研发用于各个星球之间通讯的手机，可能需要配合卫星和星链，属于第三代手机，主要目标是将人类推向多行星生存的方向。",
+   tags:["星际通讯","第三代手机","配合卫星与星链"],
+   lines:["研发各星球之间通讯的手机","配合卫星和星链使用","第三代手机形态","目标：将人类推向多行星生存"]},
+  {id:29, cat:3, name:"真空高铁", en:"真空管道超高速磁浮", loc:"长沙",
+   desc:"真空管道超高速磁浮交通。地面应用面向城际超高速运输，远期计划延伸到月球与火星等地外场景。国内在研项目由航天科工与地方政府主导：山西大同阳高试验线一期线路长 2 公里、投资 10 亿元，2024 年 8 月完成低真空环境系统集成演示验证；2026 年 2 月 10 日申报国家重大科技基础设施未通过国家发改委审核。",
+   tags:["真空管道","超高速磁浮","地外交通"],
+   lines:["地面应用：城际真空管道超高速运输","地外应用：月球与火星表面交通（远期设想）","国内试验：大同阳高全尺寸试验线（一期 2 公里）、西南交大多态耦合动模平台（1620 米）","规划定位：《交通强国建设纲要》列为「低真空管（隧）道高速列车」技术储备研发"],
+   flag:"落点待确认"},
+  {id:30, cat:3, name:"太空芯片", en:"宇航级芯片与地面芯片", loc:"成都",
+   desc:"宇航级芯片与地面芯片业务，既包括抗辐照的宇航级芯片，也包括地球上使用的普通商用芯片。抗辐照方向需满足总剂量与单粒子效应要求，国内已有 GB/T 43228-2023《宇航用抗辐照加固集成电路单元库设计要求》（2024 年 1 月 1 日实施）。",
+   tags:["宇航级芯片","抗辐照加固","地面芯片"],
+   lines:["宇航级芯片：抗辐照 CPU、FPGA、存储器、电源管理","地面芯片：商用与工业级芯片设计","标准依据：GB/T 41033-2021、GB/T 43228-2023（2024.1.1 实施）"],
+   flag:"落点待确认"},
+  {id:31, cat:3, name:"量子通信", en:"量子保密通信", loc:"成都",
+   desc:"量子保密通信业务。中国在量子密钥分发（QKD）领域全球领先：京沪干线全长 2032 公里、2017 年 9 月正式开通，墨子号量子科学实验卫星 2016 年发射；行业标杆国盾量子 2025 年营收 3.10 亿元、归母净利 539.19 万元（首次扭亏），扣非仍为 −4380.21 万元。需同时关注后量子密码（PQC）的路线竞争——NIST 已于 2024 年 8 月 13 日发布 FIPS 203/204/205 三项标准。",
+   tags:["量子密钥分发","量子保密通信","QKD"],
+   lines:["QKD 设备与系统集成","量子保密通信网络建设与运维","量子卫星地面站与星地链路","技术路线参考：国盾量子（688027.SH）、国科量子、济南一号微纳卫星"],
+   flag:"落点待确认"},
+
+  /* —— 第四类 综合实用型 —— */
+  {id:21, cat:4, name:"IP 创建和投流公司", en:"", loc:"成都",
+   desc:"IP 创建与投流业务主体。",
+   tags:["IP 创建","投流"], lines:[]},
+  {id:22, cat:4, name:"数字内容技术公司", en:"", loc:"松阅",
+   desc:"从事视频生成和剪辑。",
+   tags:["视频生成","视频剪辑"], lines:["视频生成","视频剪辑"]},
+  {id:23, cat:4, name:"AI 业务应用开发公司", en:"", loc:"成都",
+   desc:"业务包括清华大学教学平台的开发、明信片生成、语音复刻平台、AI 客服、旅游规划服务与智能规划服务、AI 写作、AI 项目中介。以上均为本公司内部产品线。",
+   tags:["AI 应用","内部产品线"],
+   lines:["清华大学教学平台的开发","明信片生成","语音复刻平台","AI 客服","旅游规划服务与智能规划服务","AI 写作","AI 项目中介"],
+   note:"上述七项为 AI 业务应用开发公司的内部产品线，非独立公司主体。"},
+  {id:24, cat:4, name:"AI 广告设计与平面设计公司", en:"", loc:"阳光花园",
+   desc:"AI 广告设计与平面设计业务主体。",
+   tags:["AI 广告设计","平面设计"], lines:[]},
+  {id:25, cat:4, name:"算力租用中心", en:"", loc:"松阅算力基地",
+   desc:"算力租用中心，落点为松阅算力基地。",
+   tags:["算力租用"], lines:[]},
+  {id:26, cat:4, name:"大健康公司", en:"", loc:"阳光花园",
+   desc:"大健康业务主体。",
+   tags:["大健康"], lines:[]},
+  {id:27, cat:4, name:"成功学培训公司", en:"", loc:"郑州",
+   desc:"成功学培训业务主体。",
+   tags:["培训"], lines:[]},
+  {id:28, cat:4, name:"写作平台", en:"", loc:"成都",
+   desc:"写作平台业务主体。",
+   tags:["写作平台"], lines:[]}
+];
+
+var LOCS = ["长沙","成都","松阅","郑州","红钢城","青教花园","阳光花园"];
+
+var ROAD = [
+  {ph:"第一阶段", t:"技术底座与平台能力", rc:"#38bdf8",
+   d:"从第一类起步：搭建 OpenClaw 体系下的 Steel Claw、Genesis OS 分布式操作系统、engine Code 代码工具链与 cosmos 大模型能力，为后续各类产业与前沿业务提供底层支撑。"},
+  {ph:"第二阶段", t:"产业自动化与通信基础设施", rc:"#fbbf24",
+   d:"延伸到第二类：深工智能的钢铁自动化工程、智冶纪元的垂类钢铁自动控制模型、深空通信的星地通讯转换与管理，并同步推进光纤一体化、安防工程、消防工程与智能家居物联网等基础设施业务。"},
+  {ph:"第三阶段", t:"多行星生存与前沿科技", rc:"#a78bfa",
+   d:"进入第三类长线布局：机器人、太空能源、电动汽车、脑机接口、生命科学、星链公司与火箭卫星发射，直至地外生产线与星际手机；同步布局真空高铁（地面城际与远期地外交通）、太空芯片（宇航级与地面芯片）与量子通信，指向多行星生存方向。"},
+  {ph:"贯穿全程", t:"综合实用型商业化支撑", rc:"#34d399",
+   d:"第四类同步推进并形成现金流：IP 创建与投流、数字内容技术、AI 业务应用开发、AI 广告与平面设计、算力租用中心、大健康、成功学培训与写作平台，为前三类提供商业化支撑。"}
+];
+
+/* SECTION: helpers */
+function catOf(n){ for(var i=0;i<CATS.length;i++){ if(CATS[i].n===n) return CATS[i]; } return CATS[0]; }
+function fill(tplId, parent){
+  var t = document.getElementById(tplId);
+  var node = t.content.firstElementChild.cloneNode(true);
+  parent.appendChild(node);
+  return node;
+}
+function setText(el, sel, val){ var n = el.querySelector(sel); if(n) n.textContent = val; }
+
+/* SECTION: render-cards */
+function buildCards(){
+  COMPANIES.forEach(function(c){
+    var cat = catOf(c.cat);
+    var host = document.querySelector('[data-cards="'+c.cat+'"]');
+    if(!host) return;
+    var el = fill("tplCard", host);
+    el.style.setProperty("--ac", cat.ac);
+    el.dataset.id = String(c.id);
+    el.dataset.cat = String(c.cat);
+    el.dataset.loc = c.loc;
+    el.dataset.search = (c.name + " " + c.loc + " " + (c.en||"") + " " + (c.desc||"") + " " + cat.name + " " + (c.tags||[]).join(" ")).toLowerCase();
+    setText(el, ".card-idx", "No." + String(c.id).padStart(2,"0"));
+    setText(el, ".card-cat", cat.short);
+    setText(el, ".card-name .nm", c.name);
+    var enEl = el.querySelector(".card-name .en");
+    if(c.en){ enEl.textContent = c.en; } else { enEl.remove(); }
+    var locWrap = el.querySelector(".card-loc");
+    setText(el, ".loc-txt", c.loc);
+    if(c.flag){
+      var f = document.createElement("span");
+      f.className = "loc-flag";
+      f.textContent = c.flag;
+      locWrap.appendChild(f);
+    }
+    setText(el, ".card-desc", c.desc);
+    var tagHost = el.querySelector(".card-tags");
+    (c.tags||[]).forEach(function(t){
+      var tg = fill("tplTag", tagHost);
+      tg.textContent = t;
+    });
+    if(!c.tags || !c.tags.length) tagHost.remove();
+    el.querySelector(".card-more").addEventListener("click", function(){ openModal(c.id); });
+    el.addEventListener("click", function(ev){
+      if(ev.target.closest(".card-more")) return;
+      openModal(c.id);
+    });
+  });
+}
+
+/* SECTION: render-counts */
+function buildCounts(){
+  CATS.forEach(function(cat){
+    var n = COMPANIES.filter(function(c){ return c.cat===cat.n; }).length;
+    var badge = document.querySelector('[data-countfor="'+cat.n+'"]');
+    if(badge) badge.textContent = n + " 家";
+  });
+  document.getElementById("footCount").textContent =
+    CATS.length + " 类 · " + COMPANIES.length + " 家 · " + LOCS.length + " 地";
+}
+
+/* SECTION: render-locs */
+function buildLocs(){
+  var grid = document.getElementById("locGrid");
+  LOCS.forEach(function(locName){
+    var items = COMPANIES.filter(function(c){ return c.loc === locName || c.loc.indexOf(locName) === 0; });
+    var el = fill("tplLoc", grid);
+    setText(el, ".ln", locName);
+    setText(el, ".loc-n", items.length + " 家");
+    var list = el.querySelector(".loc-list");
+    items.forEach(function(c){
+      var cat = catOf(c.cat);
+      var it = fill("tplLocItem", list);
+      it.dataset.id = String(c.id);
+      it.querySelector(".loc-dot").style.background = cat.ac;
+      setText(it, ".nm", c.name);
+      setText(it, ".ct", "第" + ["一","二","三","四"][c.cat-1] + "类");
+      it.addEventListener("click", function(){ openModal(c.id); });
+    });
+    if(!items.length){
+      var none = document.createElement("div");
+      none.style.cssText = "padding:10px;font-size:13.5px;color:#6f83a3";
+      none.textContent = "暂无落点主体";
+      list.appendChild(none);
+    }
+  });
+}
+
+/* SECTION: render-road */
+function buildRoad(){
+  var host = document.getElementById("road");
+  ROAD.forEach(function(r){
+    var el = fill("tplRoad", host);
+    el.style.setProperty("--rc", r.rc);
+    setText(el, ".ph", r.ph);
+    setText(el, ".rt", r.t);
+    setText(el, ".road-d", r.d);
+  });
+}
+
+/* SECTION: chips */
+function buildChips(){
+  var host = document.getElementById("chips");
+  var all = [{n:0, name:"全部"}].concat(CATS.map(function(c){ return {n:c.n, name:"第"+["一","二","三","四"][c.n-1]+"类"}; }));
+  all.forEach(function(c, i){
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "chip" + (i===0 ? " on" : "");
+    b.dataset.cat = String(c.n);
+    b.textContent = c.name;
+    b.addEventListener("click", function(){
+      state.cat = c.n;
+      host.querySelectorAll(".chip").forEach(function(x){ x.classList.toggle("on", x===b); });
+      applyFilter();
+    });
+    host.appendChild(b);
+  });
+}
+
+/* SECTION: filter */
+var state = {cat:0, q:""};
+
+function applyFilter(){
+  var shown = 0;
+  CATS.forEach(function(cat){
+    var host = document.querySelector('[data-cards="'+cat.n+'"]');
+    if(!host) return;
+    var visInCat = 0;
+    host.querySelectorAll(".card").forEach(function(card){
+      var okCat = state.cat === 0 || Number(card.dataset.cat) === state.cat;
+      var okQ = !state.q || card.dataset.search.indexOf(state.q) !== -1;
+      var vis = okCat && okQ;
+      card.style.display = vis ? "" : "none";
+      if(vis){ visInCat++; shown++; }
+    });
+    var sec = document.getElementById("cat"+cat.n);
+    if(sec) sec.style.display = (state.cat===0 || state.cat===cat.n) ? "" : "none";
+  });
+  var line = document.getElementById("resultLine");
+  if(state.q || state.cat){
+    line.textContent = "";
+    var b = document.createElement("b");
+    b.textContent = String(shown);
+    line.appendChild(b);
+    line.appendChild(document.createTextNode(" / " + COMPANIES.length + " 家匹配当前筛选"));
+  } else {
+    line.textContent = "";
+  }
+  document.getElementById("empty").classList.toggle("show", shown===0);
+}
+
+/* SECTION: modal */
+var modal = document.getElementById("modal");
+var mBody = document.getElementById("mBody");
+var lastFocus = null;
+
+function openModal(id){
+  var c = null;
+  for(var i=0;i<COMPANIES.length;i++){ if(COMPANIES[i].id===id){ c = COMPANIES[i]; break; } }
+  if(!c) return;
+  var cat = catOf(c.cat);
+  mBody.innerHTML = "";
+  mBody.style.setProperty("--ac", cat.ac);
+  lastFocus = document.activeElement;
+
+  var mc = document.createElement("div");
+  mc.className = "m-cat";
+  var dot = document.createElement("i");
+  mc.appendChild(dot);
+  var cl = document.createElement("span");
+  cl.textContent = "第" + ["一","二","三","四"][c.cat-1] + "类 · " + cat.name;
+  cl.style.color = cat.ac;
+  mc.appendChild(cl);
+  mBody.appendChild(mc);
+
+  var h = document.createElement("h3");
+  h.className = "m-name";
+  h.id = "mName";
+  h.textContent = c.name;
+  mBody.appendChild(h);
+
+  if(c.en){
+    var en = document.createElement("div");
+    en.className = "m-en";
+    en.textContent = c.en;
+    mBody.appendChild(en);
+  }
+
+  var meta = document.createElement("div");
+  meta.className = "m-meta";
+  var p1 = document.createElement("span");
+  p1.className = "m-pill";
+  p1.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.8"/></svg>';
+  var p1s = document.createElement("span");
+  p1s.textContent = c.loc;
+  p1.appendChild(p1s);
+  meta.appendChild(p1);
+  var p2 = document.createElement("span");
+  p2.className = "m-pill";
+  p2.textContent = "编号 No." + String(c.id).padStart(2,"0");
+  meta.appendChild(p2);
+  if(c.flag){
+    var p3 = document.createElement("span");
+    p3.className = "m-pill";
+    p3.style.cssText = "background:rgba(251,191,36,.12);border-color:rgba(251,191,36,.3);color:#fcd34d";
+    p3.textContent = c.flag;
+    meta.appendChild(p3);
+  }
+  mBody.appendChild(meta);
+
+  function block(label){
+    var b = document.createElement("div");
+    b.className = "m-block";
+    var l = document.createElement("div");
+    l.className = "m-lab";
+    l.textContent = label;
+    b.appendChild(l);
+    mBody.appendChild(b);
+    return b;
+  }
+
+  if(c.desc){
+    var bd = block("业务说明");
+    var pt = document.createElement("p");
+    pt.className = "m-txt";
+    pt.textContent = c.desc;
+    bd.appendChild(pt);
+  }
+
+  if(c.lines && c.lines.length){
+    var bl = block("业务构成 / 产品线");
+    var ul = document.createElement("ul");
+    ul.className = "m-list";
+    c.lines.forEach(function(t){
+      var li = document.createElement("li");
+      var s = document.createElement("span");
+      s.textContent = t;
+      li.appendChild(s);
+      ul.appendChild(li);
+    });
+    bl.appendChild(ul);
+  }
+
+  if(c.tags && c.tags.length){
+    var bt = block("关键词");
+    var tw = document.createElement("div");
+    tw.className = "card-tags";
+    c.tags.forEach(function(t){
+      var tg = fill("tplTag", tw);
+      tg.textContent = t;
+    });
+    bt.appendChild(tw);
+  }
+
+  if(c.alias){
+    var ba = block("名称对照");
+    var pa = document.createElement("p");
+    pa.className = "m-txt";
+    pa.textContent = c.alias;
+    ba.appendChild(pa);
+  }
+
+  if(c.note){
+    var bn = block("说明");
+    var nt = document.createElement("div");
+    nt.className = "m-note";
+    nt.innerHTML = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6v.6"/></svg>';
+    var ns = document.createElement("span");
+    ns.textContent = c.note;
+    nt.appendChild(ns);
+    bn.appendChild(nt);
+  }
+
+  modal.classList.add("open");
+  document.body.style.overflow = "hidden";
+  document.querySelector(".modal-close").focus();
+}
+
+function closeModal(){
+  modal.classList.remove("open");
+  document.body.style.overflow = "";
+  if(lastFocus && lastFocus.focus) lastFocus.focus();
+}
+modal.addEventListener("click", function(e){ if(e.target.hasAttribute("data-close")) closeModal(); });
+document.addEventListener("keydown", function(e){ if(e.key === "Escape" && modal.classList.contains("open")) closeModal(); });
+
+/* SECTION: counters */
+function runCounters(){
+  document.querySelectorAll("[data-count]").forEach(function(el){
+    var target = parseInt(el.dataset.count, 10) || 0;
+    var t0 = null, dur = 1100;
+    function step(ts){
+      if(!t0) t0 = ts;
+      var p = Math.min((ts - t0)/dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = String(Math.round(target * eased));
+      if(p < 1) requestAnimationFrame(step);
+      else el.textContent = String(target);
+    }
+    requestAnimationFrame(step);
+  });
+}
+
+/* SECTION: reveal + nav */
+function initReveal(){
+  var els = document.querySelectorAll(".rv");
+  if(!("IntersectionObserver" in window)){
+    els.forEach(function(e){ e.classList.add("in"); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); }
+    });
+  }, {rootMargin:"0px 0px -8% 0px", threshold:.06});
+  els.forEach(function(e){ io.observe(e); });
+}
+
+function initNavSpy(){
+  var ids = ["cat1","cat2","cat3","cat4","locs","plan"];
+  var links = {};
+  document.querySelectorAll("#navlinks a").forEach(function(a){ links[a.dataset.nav] = a; });
+  if(!("IntersectionObserver" in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        Object.keys(links).forEach(function(k){ links[k].classList.toggle("on", k === en.target.id); });
+      }
+    });
+  }, {rootMargin:"-45% 0px -50% 0px", threshold:0});
+  ids.forEach(function(id){ var s = document.getElementById(id); if(s) io.observe(s); });
+}
+
+/* SECTION: init */
+document.addEventListener("DOMContentLoaded", function(){
+  buildCards();
+  buildCounts();
+  buildLocs();
+  buildRoad();
+  buildChips();
+  initReveal();
+  initNavSpy();
+  runCounters();
+
+  var q = document.getElementById("q");
+  var timer = null;
+  q.addEventListener("input", function(){
+    clearTimeout(timer);
+    timer = setTimeout(function(){
+      state.q = q.value.trim().toLowerCase();
+      applyFilter();
+    }, 140);
+  });
+
+  applyFilter();
+});
+</script>
+</body>
+</html>
